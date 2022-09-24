@@ -23,9 +23,30 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  login() {
-    var acno = this.acno
-    var psw= this.psw
+  // login() {
+  //   var acno = this.acno
+  //   var psw= this.psw
+  //   let userDetails = this.userDetails
+  //   if (acno in userDetails) {
+  //     if (psw == userDetails[acno]['password']) {
+  //       alert('login successfull')
+  //     }
+  //     else {
+  //       alert('incorrect psw')
+  //     }
+  //   }
+  //   else {
+  //     alert('incorrect ac no or not exist')
+  //   }
+  // }
+  login(a:any,b:any) {
+
+    console.log(a.value);
+    console.log(b.value);
+    
+    
+    var acno = a.value
+    var psw= b.value
     let userDetails = this.userDetails
     if (acno in userDetails) {
       if (psw == userDetails[acno]['password']) {
@@ -39,18 +60,20 @@ export class LoginComponent implements OnInit {
       alert('incorrect ac no or not exist')
     }
   }
-  acnoChange(event: any) {
-    this.acno = (event.target.value)
-    console.log(this.acno);
 
-  }
-  pswChange(event: any) {
-    this.psw = (event.target.value)
-    console.log(this.psw);
+  // acnoChange(event: any) {
+  //   this.acno = (event.target.value)
+  //   console.log(this.acno);
 
-  }
+  // }
+  // pswChange(event: any) {
+  //   this.psw = (event.target.value)
+  //   console.log(this.psw);
+
+  // }
 
 }
+
 
 
 

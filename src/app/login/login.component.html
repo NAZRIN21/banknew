@@ -6,9 +6,9 @@
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
             <img src="./assets/jjj.png" alt="Avatar" class="avatar" >
           </div>
-        <input type="text" id="usern" [placeholder]="acnt" (change)="acnoChange($event)"  class="form-control" style="text-align:center ;"><br>
-        <input type="password" id="psw" placeholder="Password" (change)="pswChange($event)" class="form-control "style="text-align:center ;"><br>
-        <button type="button" (click)="login()" id="btn">Log In</button><br><br>
+        <input type="text" id="usern" [placeholder]="acnt" #acno  class="form-control" style="text-align:center ;"><br>
+        <input type="password" id="psw" placeholder="Password" #psw class="form-control "style="text-align:center ;"><br>
+        <button type="button" (click)="login(acno,psw)" id="btn">Log In</button><br><br>
         <a href="" style="text-decoration: none; color:white;margin-left: 50px;font-weight: bolder;">Don't have an account ? register</a>
     </div>
 </div>
