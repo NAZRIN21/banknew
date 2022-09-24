@@ -1,0 +1,32 @@
+#n1{
+    height: 300px;
+    width: 350px;
+    margin-top: 100px;
+}
+#usern{
+    margin-left:- 10px;
+
+}
+#btn{
+    margin-left: 120px;
+    width: 100px;
+    height: 30px;
+    border: 30px  white;
+    color:white;
+    font-weight: bolder;
+    background-color: rgb(66, 7, 122);
+}
+#psw{
+    margin-left:- 10px;
+
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
