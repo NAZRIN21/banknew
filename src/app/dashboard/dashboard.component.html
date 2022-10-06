@@ -1,0 +1,31 @@
+<h1 style="color:white ; text-align: center; font-size: 30px;">Welcome {{user}}!!!</h1>
+<!-- / useyunad next pagelek povan  -->
+<a routerLink="/transaction" style="color: white; margin-left: 100px;">view your transaction history</a>
+<form (ngSubmit)="deposit()">
+    <div class="container " style="width: 400px;height:400px;">
+        <div class="container " id="n1" style="border: white 2px solid;"><br>
+            <h3 style="color: white;">deposit</h3>
+
+            <input name="acnum" type="text" id="acnum" placeholder="acnum" [(ngModel)]="acno1"  class="form-control" style="text-align:center ;"><br>
+            <input name="password" type="text" id="ps" placeholder="password" [(ngModel)]="psw1"  class="form-control" style="text-align:center ;"><br>
+            <input name="amnt" type="text" id="amnt" placeholder="amount"   [(ngModel)]="amnt1"  class="form-control "style="text-align:center ;"><br>
+    
+            <button type="submit"  id="btn" class="btn btn-success">deposit</button><br><br>
+        </div>
+    </div>
+
+</form>  
+<form (ngSubmit)="withdraw()">
+    <div class="container " style="width: 400px;height:400px;">
+        <div class="container " id="n1" style="border: white 2px solid; "><br>
+            <h3 style="color: white;">withdraw</h3>
+
+            <input name="acno" type="text" id="acnoo" placeholder="acnum" [(ngModel)]="acno2"  class="form-control" style="text-align:center ;"><br>
+            <input name="psww" type="text" id="pwd" placeholder="enter your Password" [(ngModel)]="psw2"  class="form-control" style="text-align:center ;"><br>
+            <input name="amount" type="text" id="amt" placeholder="AMOUNT"   [(ngModel)]="amnt2"  class="form-control "style="text-align:center ;"><br>
+    
+            <button type="submit"  id="btn" class="btn btn-success">withdraw</button><br><br>
+        </div>
+    </div>
+
+</form>  

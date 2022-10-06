@@ -1,14 +1,17 @@
 <div class="text-center ms-5 p-3 " style="color:white ;"><h4>{{aim}}</h4></div>
 
 <div class="container">
-    <div class="container " id="n1"><br>
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
-            <img src="./assets/jjj.png" alt="Avatar" class="avatar" >
-          </div>
-        <input type="text" id="usern" [placeholder]="acnt" #acno  class="form-control" style="text-align:center ;"><br>
-        <input type="password" id="psw" placeholder="Password" #psw class="form-control "style="text-align:center ;"><br>
-        <button type="button" (click)="login(acno,psw)" id="btn">Log In</button><br><br>
-        <a href="" style="text-decoration: none; color:white;margin-left: 50px;font-weight: bolder;">Don't have an account ? register</a>
-    </div>
-</div>
+<form (ngSubmit)="login()">
+        <div class="container " id="n1"><br>
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+                <img src="./assets/jjj.png" alt="Avatar" class="avatar" >
+              </div>
+            <input name="acnum" type="text" id="usern" [placeholder]="acnt" [(ngModel)]="acno"  class="form-control" style="text-align:center ;"><br>
+            <input name="psw" type="password" id="psw" placeholder="Password"  [(ngModel)]="psw"  class="form-control "style="text-align:center ;"><br>
+            <button type="submit" (click)="login()" id="btn">Log In</button><br><br>
+            <a href="" style="text-decoration: none; color:white;margin-left: 50px;font-weight: bolder;" routerLink="register">Don't have an account ? <span style="color: red;">register</span></a>
+        </div>
+
+</form> 
+ </div>

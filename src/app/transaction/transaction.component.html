@@ -1,0 +1,23 @@
+<!-- table -->
+<!-- heading -->
+<!--  -->
+<!-- Structural  directive -ngFor(instead of i[])  can apply directly in html to accessw datas form array -->
+
+<br>
+<h1 style="text-align:center ; color: white;">TRANSACTION HISTORY</h1><br><br>
+<div class="container">
+  <table class="container">
+    <tr>
+      <th>Type</th>
+      <th>Amount</th>
+    </tr>
+    <tr *ngFor="let i of transaction">
+      <!-- i object name -->
+     <td>{{i.type}}</td>
+     <td>{{i.amount}}</td>
+    </tr>
+  </table><br><br>
+  <a routerLink="/dashboard" style="color:black;  background-color: white; font-weight: bolder;text-decoration: none; ">Home page</a>
+
+
+</div>
